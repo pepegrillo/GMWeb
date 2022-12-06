@@ -43,16 +43,37 @@
         </div>
 
         <header class="site-header bg-white py-1">
-            <nav class="container d-flex flex-column flex-md-row justify-content-between  align-items-center fs-5">
-                <a class="py-2 img-logo" href="#" aria-label="Product">
-                    <img src="images/logo-gm.png" class="img-fluid d-block mx-auto ">
-                </a>
-                <a class="py-2 d-none d-md-inline-block active" href="#">Home</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">About Us</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Windows Series</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Doors Series</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Showroom</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Contact Us</a>
+            <nav class="container d-flex flex-column flex-lg-row justify-content-between  align-items-center fs-5"> 
+                <div class="container d-flex  flex-md-row justify-content-between  align-items-center fs-5 top-nav">
+                    <a class="py-2 img-logo" href="#" aria-label="Product">
+                        <img src="images/logo-gm.png" class="img-fluid d-block mx-auto ">
+                    </a>
+                    <input id="menu-toggle" type="checkbox"/>
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+
+                    <ul class="menu">
+                        <li>
+                            <a class="py-2 active" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Windows Series</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Doors Series</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Showroom</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -80,7 +101,7 @@
 
             <!-- Paragraph SERIES -->
             <section class="container">
-                <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-3 mb-1 align-items-center">
+                <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-3 mb-1 align-items-top">
                     <div class=" overflow-hidden pt-1 pt-md-3 px-2 text-start">
                         <div class="my-3 p-4 bg-light">
                             <div class="bg-light border-0 card">
@@ -88,7 +109,7 @@
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">Slidind Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -96,11 +117,11 @@
                     <div class=" overflow-hidden pt-1 pt-md-3 px-2 text-start ">
                         <div class="my-3 p-4 bg-light">
                             <div class="bg-light border-0 card">
-                                <img src="images/doors/2.png" class="card-img-top" alt="...">
+                                <img src="images/doors/3.png" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">Slidind Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -112,14 +133,14 @@
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">Bi Fold Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-2 mb-4 align-items-center">
+                <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-2 mb-4 align-items-top">
                     <div class=" overflow-hidden pt-1 pt-md-3 px-2 text-start">
                         <div class="my-3 p-4 bg-light">
                             <div class="bg-light border-0 card">
@@ -127,7 +148,7 @@
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">Multi Slider Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -139,7 +160,7 @@
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">French Swing Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -147,11 +168,11 @@
                     <div class=" overflow-hidden pt-1 pt-md-3 px-2 text-start ">
                         <div class="my-3 p-4 bg-light">
                             <div class="bg-light border-0 card">
-                                <img src="images/doors/3.png" class="card-img-top" alt="...">
+                                <img src="images/doors/2.png" class="card-img-top" alt="...">
                                 <div class="card-body text-center">
                                     <h2 class="fs-5 fw-bold w-100 text-center">French Swing Door</h2>
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-5 py-3">View Details</a>
+                                    <a href="" class="btn btn-primary btn-primary-grid rounded-pill fd-6 fw-bold border-0 px-lg-5 py-3 w-100">View Details</a>
                                 </div>
                             </div>
                         </div>
@@ -163,13 +184,13 @@
 
         <footer class="container-fluid py-5 px-5 bg-light">
             <div class="row">
-                <div class="col-12 col-md">
+                <div class="col-12 col-md-12 col-lg">
                     
                     <div class="img-logo">
                         <img src="images/logo-gm.png" class="img-fluid d-block mx-auto">
                     </div>
                     
-                    <h5 class="text-center mt-3">Our Certifications</h5>
+                    <h5 class="text-center mt-3 fw-bold">Our Certifications</h5>
                     <ul class="list-inline text-center img-certification">
                         <li class="list-inline-item">
                             <img src="images/c1.png" class="img-fluid">
@@ -179,8 +200,8 @@
                         </li> 
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Navigation Links</h5>
+                <div class="col-12 col-md-6 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Navigation Links</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li>
                             <a class="link-secondary text-decoration-none" href="#">Home</a>
@@ -202,8 +223,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Locations</h5>
+                <div class="col-12 col-md-6 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Locations</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li class="mb-3">
                             <p class="m-0 fw-bold">
@@ -229,8 +250,8 @@
                         </li> 
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Operation Hours</h5>
+                <div class="col-12 col-md-12 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Operation Hours</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li class="mb-3">
                             <p>
@@ -242,7 +263,7 @@
                         </li>
                     </ul>
 
-                    <h5 class="mt-3 border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Follow Us</h5>
+                    <h5 class="mt-3 border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Follow Us</h5>
                     <ul class="list-inline img-rs">
                         <li class="list-inline-item">
                             <img src="images/fb.png" class="img-fluid">
@@ -257,19 +278,18 @@
                 </div> 
  
             </div>
-        </footer>
+        </footer> 
 
         <div class="site-header-top py-3 ">
             <div class="container d-flex flex-column justify-content-between">
                 <div class="row align-items-center">
 
-                    <div class="col col-md text-center">
+                    <div class="col col-md text-center fw-bold">
                         <h5>
-                            GM Windows and Doors © 2022. All Rights Reserved.
-                            <br>
+                            GM Windows and Doors © 2022. All Rights Reserved. <br>
                             Powered GM Window and Doors
-                        </h5>
-                    </div>
+                        </h5> 
+                    </div> 
                 </div>
             </div>
         </div>

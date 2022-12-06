@@ -43,16 +43,37 @@
         </div>
 
         <header class="site-header bg-white py-1">
-            <nav class="container d-flex flex-column flex-md-row justify-content-between  align-items-center fs-5">
-                <a class="py-2 img-logo" href="#" aria-label="Product">
-                    <img src="images/logo-gm.png" class="img-fluid d-block mx-auto ">
-                </a>
-                <a class="py-2 d-none d-md-inline-block active" href="#">Home</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">About Us</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Windows Series</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Doors Series</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Showroom</a>
-                <a class="py-2 d-none d-md-inline-block" href="#">Contact Us</a>
+            <nav class="container d-flex flex-column flex-lg-row justify-content-between  align-items-center fs-5"> 
+                <div class="container d-flex  flex-md-row justify-content-between  align-items-center fs-5 top-nav">
+                    <a class="py-2 img-logo" href="#" aria-label="Product">
+                        <img src="images/logo-gm.png" class="img-fluid d-block mx-auto ">
+                    </a>
+                    <input id="menu-toggle" type="checkbox"/>
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+
+                    <ul class="menu">
+                        <li>
+                            <a class="py-2 active" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Windows Series</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Doors Series</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Showroom</a>
+                        </li>
+                        <li>
+                            <a class="py-2" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -79,7 +100,7 @@
             </section>
 
             <!-- Paragraph SERIES -->
-            <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-3 mb-4 align-items-center">
+            <div class="bg-white w-100 mt-md-3 mb-4 align-items-center d-flex flex-equal flex-column d-sm-flex flex-sm-equal flex-sm-column d-lg-flex flex-lg-equal flex-lg-row">
                 <div class=" overflow-hidden pt-1 pt-md-3 text-start">
                     <div class="my-3 p-3 ps-5">
 
@@ -91,21 +112,21 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h2 class="fs-2 fw-bold card-title">PICTURE WINDOWS</h2>
-                                        <p class="card-text lead">
+                                        <p class="card-text lead fw-bold fs-4">
                                             It’s a non-operable window that gives your home a clear view of your outdoors.
                                         </p>
 
-                                        <h2 class="fs-2 fw-bold card-title">COLORS AVAILABLE</h2>
+                                        <h2 class="fs-2 fw-bold card-title mt-5">COLORS AVAILABLE </h2>
                                         <p class="card-text lead">
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: white !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #292625 !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #302726 !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #642a27 !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #175a48 !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #ebdfcb !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #292626 !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #c6c2be !important;"></span>
-                                            <span class="badge badge-color bg-primary rounded-circle border border-dark" style="background-color: #9a2f2f !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: white !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #292625 !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #302726 !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #642a27 !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #175a48 !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #ebdfcb !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #292626 !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #c6c2be !important;"></span>
+                                            <span class="badge badge-color bg-primary rounded-circle border border-dark d-inline-block" style="background-color: #9a2f2f !important;"></span>
                                         </p>
                                     </div>
                                 </div>
@@ -117,20 +138,20 @@
                     <div class="my-3 p-3 ps-5">
                         <h2 class="fs-2 fw-bold">OPTIONS</h2>
                         <p class="lead ">
-                            <ol class="my-2 fs-5">
-                                <li>
+                            <ol class="my-2 fs-3">
+                                <li class="py-2">
                                     Standard and custom sizes.
                                 </li>
-                                <li>
+                                <li class="py-2">
                                     Factory stacking and mulling options in many different combinations.
                                 </li>
-                                <li>
+                                <li class="py-2">
                                     AAMA and NFRC certified to meet or exceed industry structural and energy efficiency standards.
                                 </li>
-                                <li>
+                                <li class="py-2">
                                     May be ordered to meet ENERGYSTAR
                                 </li>
-                                <li>
+                                <li class="py-2">
                                     Lifetime Warranty (Does not include glass breakage)
                                 </li>
                             </ol>
@@ -145,7 +166,7 @@
 
                     <div class="container">
                         <div class="row align-items-center justify-content-md-center">
-                            <div class="col-auto p-lg-3 my-4 me-5 ">
+                            <div class="col-12 col-md-auto p-lg-3 my-4 me-5 text-center text-md-start">
                                 <h1 class="display-6 fw-normal mt-3 text-white centery">
                                     Quote this product
                                     <br>
@@ -153,9 +174,9 @@
                                 </h1>
                             </div>
                             <div
-                                class="col-auto p-lg-3 my-4 ">
+                                class="col-12 col-md-auto p-lg-3 my-4 text-center text-md-start">
                                 <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary btn-accent-grid rounded-pill fs-4 fw-bold border-0 px-5 py-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <button type="button" class="btn btn-primary btn-accent-grid rounded-pill fs-3 fw-bold border-0 px-5 py-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                                     Quote now
                                 </button>
                             </div>
@@ -168,7 +189,7 @@
 
             <!-- windows SERIES -->
             <section>
-                <div class="bg-white d-md-flex flex-md-equal w-100 mt-md-3 mb-4 align-items-center">
+                <div class="bg-white w-100 mt-md-3 mb-4 align-items-center d-flex flex-equal flex-column d-sm-flex flex-sm-equal flex-sm-column d-lg-flex flex-lg-equal flex-lg-row">
                     <div class=" overflow-hidden pt-1 pt-md-3 text-start">
                         <div class="my-3 p-3 ps-5">
 
@@ -179,7 +200,7 @@
                     <div class=" overflow-hidden pt-1 pt-md-3 text-start border-end border-3">
                         <div class="my-3 p-3 ps-5">
 
-                            <h2 class="fs-1 fw-bold w-100 text-center mb-4">THERMAL, STRUCTURAL,& SOUND PERFORMANCE</h2>
+                            <h2 class="fs-1 fw-bold w-100 text-center mb-4">THERMAL, STRUCTURAL & SOUND PERFORMANCE</h2>
                             <img src="images/detail2.png" class="img-fluid rounded-1  d-block mx-auto" alt="...">
                         </div>
                     </div>
@@ -190,13 +211,13 @@
 
         <footer class="container-fluid py-5 px-5 bg-light">
             <div class="row">
-                <div class="col-12 col-md">
+                <div class="col-12 col-md-12 col-lg">
                     
                     <div class="img-logo">
                         <img src="images/logo-gm.png" class="img-fluid d-block mx-auto">
                     </div>
                     
-                    <h5 class="text-center mt-3">Our Certifications</h5>
+                    <h5 class="text-center mt-3 fw-bold">Our Certifications</h5>
                     <ul class="list-inline text-center img-certification">
                         <li class="list-inline-item">
                             <img src="images/c1.png" class="img-fluid">
@@ -206,8 +227,8 @@
                         </li> 
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Navigation Links</h5>
+                <div class="col-12 col-md-6 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Navigation Links</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li>
                             <a class="link-secondary text-decoration-none" href="#">Home</a>
@@ -229,8 +250,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Locations</h5>
+                <div class="col-12 col-md-6 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Locations</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li class="mb-3">
                             <p class="m-0 fw-bold">
@@ -256,8 +277,8 @@
                         </li> 
                     </ul>
                 </div>
-                <div class="col-12 col-md mb-4">
-                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Operation Hours</h5>
+                <div class="col-12 col-md-12 col-lg mb-4">
+                    <h5 class="border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Operation Hours</h5>
                     <ul class="list-unstyled text-small fs-5">
                         <li class="mb-3">
                             <p>
@@ -269,7 +290,7 @@
                         </li>
                     </ul>
 
-                    <h5 class="mt-3 border-3 border-bottom border-dark d-inline-block pb-1 w-auto">Follow Us</h5>
+                    <h5 class="mt-3 border-3 border-bottom border-dark d-inline-block pb-1 w-auto fw-bold">Follow Us</h5>
                     <ul class="list-inline img-rs">
                         <li class="list-inline-item">
                             <img src="images/fb.png" class="img-fluid">
@@ -284,26 +305,25 @@
                 </div> 
  
             </div>
-        </footer>
+        </footer> 
 
         <div class="site-header-top py-3 ">
             <div class="container d-flex flex-column justify-content-between">
                 <div class="row align-items-center">
 
-                    <div class="col col-md text-center">
+                    <div class="col col-md text-center fw-bold">
                         <h5>
-                            GM Windows and Doors © 2022. All Rights Reserved.
-                            <br>
+                            GM Windows and Doors © 2022. All Rights Reserved. <br>
                             Powered GM Window and Doors
-                        </h5>
-                    </div>
+                        </h5> 
+                    </div> 
                 </div>
             </div>
         </div>
 
         <!-- Modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-lg modal-fullscreen-md-down">
                 <div class="modal-content">
                     <div class="modal-header border-0">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -317,13 +337,13 @@
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingName" placeholder="Name">
-                                            <label for="floatingName">Name</label>
+                                            <label for="floatingName" class="fw-bold">Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingLastname" placeholder="Lastname">
-                                            <label for="floatingLastname">Lastname</label>
+                                            <label for="floatingLastname" class="fw-bold">Lastname</label>
                                         </div>
                                     </div>
                                 </div>
@@ -331,13 +351,13 @@
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingName" placeholder="Number">
-                                            <label for="floatingName">Number</label>
+                                            <label for="floatingName" class="fw-bold">Number</label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="email" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingLastname" placeholder="Email">
-                                            <label for="floatingLastname">Email</label>
+                                            <label for="floatingLastname" class="fw-bold">Email</label>
                                         </div>
                                     </div>
                                 </div>
@@ -345,13 +365,13 @@
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingName" placeholder="Company">
-                                            <label for="floatingName">Company</label>
+                                            <label for="floatingName" class="fw-bold">Company</label>
                                         </div>
                                     </div>
                                     <div class="col-md">
                                         <div class="form-floating mb-3">
                                             <input type="text" class="form-control border-top-0 border-start-0 border-end-0 border-dark" id="floatingLastname" placeholder="City">
-                                            <label for="floatingLastname">City</label>
+                                            <label for="floatingLastname" class="fw-bold">City</label>
                                         </div>
                                     </div>
                                 </div>

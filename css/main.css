@@ -1,3 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+@font-face {
+  font-family: 'amikobold';
+  src: url('../fonts/amiko-bold-webfont.eot');
+  src: url('../fonts/amiko-bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/amiko-bold-webfont.woff2') format('woff2'),
+       url('../fonts/amiko-bold-webfont.woff') format('woff'),
+       url('../fonts/amiko-bold-webfont.ttf') format('truetype'),
+       url('../fonts/amiko-bold-webfont.svg#amikobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'amikoregular';
+  src: url('../fonts/amiko-regular-webfont.eot');
+  src: url('../fonts/amiko-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/amiko-regular-webfont.woff2') format('woff2'),
+       url('../fonts/amiko-regular-webfont.woff') format('woff'),
+       url('../fonts/amiko-regular-webfont.ttf') format('truetype'),
+       url('../fonts/amiko-regular-webfont.svg#amikoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html, body {
+  font-family: 'amikoregular', Arial, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 26px;
+}
+
+.fw-bold {
+  font-family: 'amikobold', Arial, sans-serif;
+}
+
 .container {
   max-width: 1200px;
 }
@@ -60,6 +101,14 @@
   transform: translateY(-50%);
 }
 
+.header-container h1 {
+  font-family: 'amikobold', Arial, sans-serif;
+}
+
+.img-container-grid {
+  width: 100%; 
+}
+
 .img-overlay-bg {
   height: 350px; 
 }
@@ -105,7 +154,7 @@
 
 .card-bg-gradient {
   background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%, rgba(0,212,255,0) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,212,255,0) 100%);
 }
 
 .bg-gradient-primary {
@@ -144,8 +193,8 @@
 }
 
 .badge-color {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
 }
 
 .img-certification img{
@@ -154,7 +203,8 @@
 }
 
 .img-logo img {
-  width: 300px;
+  /* width: 300px; */
+  height: 96px;
 }
 
 .img-rs img {
@@ -198,4 +248,121 @@
     width: 100%;
     max-width: 1600px;
   }
+}
+
+
+/* MENU */
+.top-nav { 
+  color: #FFF; 
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem; 
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #000;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+@media (max-width: 968px) {
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 116px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;    
+    background: white;
+    box-shadow: 0px 5px 10px 0px rgb(33 37 41 / 50%);
+    border-radius: 0 0 10px 10px;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li { 
+    height: 66px;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  #menu-toggle ~ .menu li a {
+    display: none;
+  }
+  #menu-toggle:checked ~ .menu li a { 
+    display: block;
+  }
+
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: white; 
+  } 
 }
